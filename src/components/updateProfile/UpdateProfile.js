@@ -59,7 +59,7 @@ function UpdateProfile() {
     }
     return (
         <div className="UpdateProfile">
-            <div className="container">
+            <div className="container sm-container">
                 <div className="left-part">
                     <div className="input-user-img">
                         <label htmlFor="inputImg" className="labelImg">
@@ -76,18 +76,25 @@ function UpdateProfile() {
                 </div>
                 <div className="right-part">
                     <form onSubmit={handleSubmit}>
-                        <input
-                            value={name}
-                            type="text"
-                            placeholder="Your Name"
-                            onChange={(e) => setName(e.target.value)}
-                        />
-                        <input
-                            value={bio}
-                            type="text"
-                            placeholder="Your Bio"
-                            onChange={(e) => setBio(e.target.value)}
-                        />
+                       
+                            
+                            <input
+                                value={name}
+                                type="text"
+                                placeholder="Your Name"
+                                onChange={(e) => setName(e.target.value)}
+                            />
+                            
+                        
+                       
+                        
+                            <input
+                                value={bio}
+                                type="text"
+                                placeholder="Your Bio"
+                                onChange={(e) => setBio(e.target.value)}
+                            />
+                       
                         <input type="submit" className="btn-primary" onClick={handleSubmit}/>
                     </form>
 

@@ -60,5 +60,15 @@
             margin-top: 16px;
             background-color: red;
         }
+        
     }
+}
+@media (max-width: 720px) {
+    .sm-container{
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        padding: 20px;
+    }
+    
 }

@@ -16,18 +16,26 @@ function Feed() {
 
   return (
     <div className="Feed">
-        <div className="container">
+        <div className="container sm-contianer">
           <div className="left-part">
             {feedData?.posts?.map(post => <Post key={post._id} post={post} />)}
           </div>
-          <div className="right-part">
+          <div className="right-part feed-right-part">
             <div className="following">
+              <div className="title-div">
               <h3 className="title">You Are Following</h3>
+              </div>
+              <div className="suggestions-div">
               {feedData?.followings?.map(user => <Follower key={user._id} user={user}/>)}
+              </div>
             </div>
             <div className="suggestions">
-              <h3 className="title">Suggested For You</h3>
-              {feedData?.suggestions?.map(user => <Follower key={user._id} user={user}/>)}
+              <div className="title-div">
+                <h3 className="title">Suggested For You</h3>
+              </div>
+              <div className="suggestions-div">
+                {feedData?.suggestions?.map(user => <Follower key={user._id} user={user}/>)}
+              </div>
             </div>
           </div>
         </div>

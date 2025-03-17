@@ -26,3 +26,16 @@
         }
     }
 }
+
+@media (max-width: 720px) {
+    .Navbar{
+        width: 100%;
+        padding: 20px;
+    }
+    .Navbar h2{
+        font-size: 16px;
+    }
+    .Navbar .right-side .logout{
+        font-size: 1.8rem;
+    }
+}
